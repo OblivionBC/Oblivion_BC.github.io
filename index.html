@@ -7,7 +7,7 @@
 <html>
 
 <head>
-	<title>Connor Hengstler</title>
+	<title >Connor Hengstler</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -24,7 +24,7 @@
 		<!-- Intro -->
 		<div id="intro">
 			<h1>Connor Hengstler </br></h1>
-			<p>A showcase of my projects and abilities, and a way to get to know me a bit better :)</p>
+			<p>Game Programmer and Software Developer</p>
 			<ul class="actions">
 				<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 			</ul>
@@ -38,7 +38,7 @@
 		<!-- Nav -->
 		<nav id="nav">
 			<ul class="links">
-				<li class="active"><a href="index.html">Homiest of Homes</a></li>
+				<li class="active"><a href="index.html">Home</a></li>
 				<li><a href="about.html">About Me</a></li>
 			</ul>
 			<ul class="icons">
@@ -55,132 +55,139 @@
 			<!-- Featured Post -->
 			<article class="post featured">
 				<header class="major">
-					<span class="date">
-						<!-- I did this part -->
+					<span class="date" style="margin-top: -6rem;">
 						<script>
 							date = new Date().toLocaleDateString();
 							document.write(date);
 						</script>
 					</span>
-					<h2>Who Am I?</h2>
-					<p>Why thank you for asking! I am a passionate Computer Science student from Vancouver Island. I am
-						currently
+					<h1 style="margin-top: -4rem;">Who Am I?</h1>
+					<p style="margin-top: -1rem;">I am a self motivated 2nd year Computer Science student currently
 						attending
-						<a href="https://www.viu.ca/">Vancouver Island University</a> and am planning to transfer to UBC
-						next year
-						after signing with their Track and Field team.
-						I touched my first computer
-						age of 11 and fell in love with the creativity and customizability of it (and Overwatch). I have
-						unfortunately
-						been chronically online
-						ever since, but it has created a passion to become a computer science student and create games
-						and software
-						that will inspire an 11 year old
-						somewhere around the world (hopefully not inspiring them to build a pillow fort around the
-						computer to hide it from their parents).
-						I love to learn about everything computer science related, and give my all into doing whatever I
-						am learning currently.
+						<a href="https://www.viu.ca/">Vancouver Island University</a> with 2 years
+						experience in C++ and Game Development, passionate about Software and Game Development.
+						Feel free to contact me with any questions or for my resume, or visit the about me
+						page
+						to learn what I do outside of programming and design.
 					</p>
-					<p>
+					<p style="margin-top: -1rem;">
 						<strong>Technical Skills</strong> <br />
 						C++ | Git | Unreal Engine | Unit Testing | CI/CD |
-					</p>
-					<p>
+						<br/>
 						<strong>Soft Skills</strong> <br />
-						Leadership | Learning Agility | Collaboration & Communication | Problem Solving |
+						Learning Agility | Collaboration & Communication | Problem Solving |
 						Self-Motivation | Fun-Having |
 					</p>
-				</header>
-				<a href="#" class="image main"><img src="images/thunking.jpg" alt="" /></a>
-				<ul class="actions special">
+					<ul class="actions special"> 
 					<li><a href="about.html" class="button large">More About Me</a></li>
 				</ul>
+				</header>
+				<!-- Posts<a href="#" class="image main"><img src="images/thunking.jpg" alt="" /></a>
+				-->
 			</article>
 
 			<!-- Posts -->
-			<section class="posts">
+			<section class="posts" style="margin-top: -6rem;">
+				<script>
+					function myFunction(header, id) {
+ 					 var demo = document.getElementById(id); // get the paragraph by id
+  						if (demo.style.maxHeight === "0px") {
+							demo.style.maxHeight = ""; // or whatever max height you want
+							demo.innerHTML = header.dataset.alt; // get the data-alt attribute of the header
+						} else {
+							demo.style.maxHeight = "0";
+							setTimeout(function() {
+							demo.innerHTML = "Click the header to see the description.";
+							}, 200); // same duration as the transition
+						}
+						}
+					</script>
 				<article>
 					<header>
-
-						<h2><a href="#">Project Jump<br />
-								Unreal Engine 5 WIP</a></h2>
-					</header>
-					<a href="#" class="image fit"><img src="images/2D.png" alt="" /></a>
-					<p>
-						This is a school project for my software engineering class. We have a team of game
-						developers working
-						on it currently. It is a procedurally generated 2D platformer with 3D graphics inspired by a
-						mix of Jetpack
-						Joyride and
-						Jump King. So far I have designed our SDLC, our git workflow, documentations for standards and
-						the game,
-						as well as implemented the first version of our player and interaction system. I am very excited
-						for this project and
-						what is to
-						come of it!
-
-					</p>
-				</article>
-				<article>
-					<header>
-
-						<h2><a href="#">Database App<br /> C++, SQL, Interbase
-							</a></h2>
-					</header>
-					<a href="#" class="image fit"><img src="images/DBApp.png" alt="" /></a>
-					<p>This was a scaled down proof of concept version of my app that I am designing as a database with
-						a GUI. This
-						app I made runs off
-						of interbase and uses SQL queries to input data from my Track and Field meets. You first input
-						the meet name, date, and
-						ID, it then creates a corrosponding row in bot the Shotput and Discus data graphs where I input
-						my distances, in this picture Shotput
-						only has 1 column since I injured myself and could not throw Shotput at that meet. It then
-						calculates the averages of each meet, and the best throw. Now, it is no Google Sheets or
-						Microsoft Excel (yet) but it
-						was very valuable in helping me envision what I will need for the final version of my app (which
-						you can read about lower on this page).
-					</p>
-
-				</article>
-				<article>
-					<header>
-
-						<h2><a href="#">Throwing Database<br />
-								MERN STACK DATABASE WIP</a></h2>
-					</header>
-					<a href="#" class="image fit"><img src="images/ThrowProj.png" alt="" /></a>
-					<p>This is my passion project. If you read my about my page you know I am a competitive track and
-						field athlete.
-						My goal for this is to create a cross-platform database application to assist in stat-tracking
-						and training
-						for track and field athletes of all levels. I have guaged interests from Olympic level athletes
-						and coaches
-						and am SUPER excited to progress this further.
-					</p>
-				</article>
-				<article>
-					<header>
-
-						<h2><a href="#">StackyCapy </br> C++, Unreal Engine
-							</a></h2>
+						<h2 onclick="myFunction(this, 'demo1')" data-alt="Project Jump, now named Tower of Dave-- Is a published unreal engine project from my software engineering class.
+						I took the role of the team lead as none of my teamates had any unreal/game dev experience, and created schedules following a spiral SDLC at first
+						then an agile once we they gained experience, the git workflow, and 
+						phases with the deliverables we would create. Tower of Dave is available now on itch.io, and is a 2D infinite verticle platformer
+						with procedurally generated levels with obstacles, and some AI renditions of songs sung by our professor."><a>Project Jump<br /></a></h2>
+								<h3>2023</h3>
 					</header>
 					<video class="image fit" controls>
-						<source src="images/CapyGameDemo.mp4" type="video/mp4">
-						The video does nmot work in this format
+						<source src="images/TowerofDaveDemo.mp4" type="video/mp4">
+						The video does not work in this format
 					</video>
-					<p>This is a game I imagined after my social media was filled with capybaras for a whole month. I
-						thought stacking them would be super cute and fun,
-						so that is what I made! So far I have finalized the character which serves as the core gameplay
-						mechanics for the game. You can stack capybaras that
-						you find on top of you, as well as swap to the highest stacked one. The capybaras get smaller
-						the more you have stacked. I did this by creating a
-						customized character class for my capybaras with all of the functionalities it needs, as well as
-						attatchable actor objects, and a game mode. This is
-						still a work in progress but I have had so much fun making it!
+					<p id="demo1" style="transition: max-height 0.2s ease-out; overflow: hidden; max-height: 0;">Click the image to see the description.</p>
+
+					
+					<div style="display: flex; align-items: center;"> <img width=70px; height=70px; src="images/role-icon-1.jpg" alt="Image Description"/>
+						<h5 style="padding-left: 20px;">  Programming and design for </br>Core Gameplay, Interactions, Character</h5></div>
+					<div style="display: flex; align-items: center;"> <img width=70px; height=70px; src="images/vector-group-people-icon.jpg" alt="Image Description"/>
+						<h5 style="padding-left: 20px;">  6 Developers </h5></div>
+					<div style="display: flex; align-items: center;"> <img width=70px; height=70px; src="images/tools.png" alt="Image Description"/>
+						<h5 style="padding-left: 20px;">  C++, Unreal Engine, Git</h5></div>
+					
+				</article>
+				<article>
+					<header>
+						<h2 onclick="myFunction(this, 'demo3')" data-alt="This is my current project and the one I am most passionate about. Before starting this, I had little to no experience
+						with any of the MERN stack components or JS. I threw myself in and am learning on the way as I go. Creating the Track and Field DB app in the MERN stack makes it much more
+						accessible since it can be modified to be cross platform compared to the earlier desktop application. I am learning a lot from developing this app and plan to connect
+						it to existing datasheets coaches may have in Google Sheets or Excel."><a>Throw Tracking App<br /></a></h2>
+								<h3>2023-Current</h3>
+					</header>
+					<a class="image fit"><img src="images/ThrowProj.png" alt="Image Description"  /></a>
+					<p id="demo3" style="transition: max-height 0.2s ease-out; overflow: hidden; max-height: 0;">Click the image to see the description.</p>
+
+					
+					<div style="display: flex; align-items: center;"> <img width=70px; height=70px; src="images/role-icon-1.jpg" alt="Image Description"/>
+						<h5 style="padding-left: 20px;">  All <br/> Servers, Database Design, <br/> MongoDB Queries, UI </h5></div>
+					<div style="display: flex; align-items: center;"> <img width=70px; height=70px; src="images/vector-group-people-icon.jpg" alt="Image Description"/>
+						<h5 style="padding-left: 20px;">  Just me </h5></div>
+					<div style="display: flex; align-items: center;"> <img width=70px; height=70px; src="images/tools.png" alt="Image Description"/>
+						<h5 style="padding-left: 20px;">  Javascript, React.js, MongoDB, Express.js, Node.js, </h5></div>
 
 
-					</p>
+				</article>
+				<article>
+					<header>
+						<h2 onclick="myFunction(this, 'demo2')" data-alt="This project was my first attempt at creating my passion project of
+						a throwing database application for my track and field. It is a desktop app that can create, update, delete, and read data from the SQL table in Interbase, and calculates
+						the average of the data from each track meet, and the best throw of those inputted. Has 2 seperate tables for shotput, and discus which are my events."><a>Database App<br /></a></h2>
+								<h3>2022</h3>
+					</header>
+					<a class="image fit"><img src="images/DBApp.png" alt="" /></a>
+					<p id="demo2" style="transition: max-height 0.2s ease-out; overflow: hidden; max-height: 0;">Click the image to see the description.</p>
+					</header>
+					<div style="display: flex; align-items: center;"> <img width=70px; height=70px; src="images/role-icon-1.jpg" alt="Image Description"/>
+						<h5 style="padding-left: 20px;">  All <br/> SQL Queries, UI, Database Design </h5></div>
+					<div style="display: flex; align-items: center;"> <img width=70px; height=70px; src="images/vector-group-people-icon.jpg" alt="Image Description"/>
+						<h5 style="padding-left: 20px;">  Just me </h5></div>
+					<div style="display: flex; align-items: center;"> <img width=70px; height=70px; src="images/tools.png" alt="Image Description"/>
+						<h5 style="padding-left: 20px;">  C++, SQL, Interbase</h5></div>
+
+				</article>
+				
+				<article>
+					<header>
+							<h2 onclick="myFunction(this, 'demo4')" data-alt="This is my personal Unreal Engine game. This game has the player as a capybara, stacking other
+							capybaras on top of it so that the capybara can advance to the next level. This is planned to be released in the summer of 2024, but is playable currently.
+							The source code for this game is available on my github which you can check
+							out by clicking the git logo on the right of the taskbar. "><a>StackyCapy<br /></a></h2>
+									<h3>2023-Current</h3>
+						</header>
+						
+						<video class="image fit" controls>
+							<source src="images/CapyGameDemo.mp4" type="video/mp4">
+							The video does not work in this format
+						</video>
+						<p id="demo4" style="transition: max-height 0.2s ease-out; overflow: hidden; max-height: 0;">Click the image to see the description.</p>
+	
+						<div style="display: flex; align-items: center;"> <img width=70px; height=70px; src="images/role-icon-1.jpg" alt="Image Description"/>
+							<h5 style="padding-left: 20px;">  All <br/> Gameplay, Interactions, <br/> Character, World</h5></div>
+						<div style="display: flex; align-items: center;"> <img width=70px; height=70px; src="images/vector-group-people-icon.jpg" alt="Image Description"/>
+							<h5 style="padding-left: 20px;">  Just Me :) </h5></div>
+						<div style="display: flex; align-items: center;"> <img width=70px; height=70px; src="images/tools.png" alt="Image Description"/>
+							<h5 style="padding-left: 20px;">  C++, Unreal Engine, Git</h5></div>
+	
 				</article>
 			</section>
 

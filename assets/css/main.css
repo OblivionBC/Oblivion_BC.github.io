@@ -2906,6 +2906,18 @@ input, select, textarea {
 	section.special, article.special {
 		text-align: center;
 	}
+	article > p{
+		background-color: lightgray;
+		border: 2px solid black;
+		padding-left: 15px;
+		padding-right: 15px;
+		font-size: medium;
+		font: oblique;
+	}
+
+	header > h2:hover{
+		cursor:pointer
+	}
 
 	header {
 		cursor: default;
