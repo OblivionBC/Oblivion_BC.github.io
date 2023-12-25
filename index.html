@@ -85,22 +85,7 @@
 
 			<!-- Posts -->
 			
-			<section class="posts" style="margin-top: -5rem;">
-				<script>
-					function myFunction(header, id) {
- 					 var demo = document.getElementById(id); // get the paragraph by id
-  						if (demo.style.maxHeight === "0px") {
-							demo.style.maxHeight = ""; // or whatever max height you want
-							demo.innerHTML = header.dataset.alt; // get the data-alt attribute of the header
-						} else {
-							demo.style.maxHeight = "0";
-							setTimeout(function() {
-							demo.innerHTML = "Click the header to see the description.";
-							}, 200); // same duration as the transition
-						}
-						}
-					</script>
-				
+			<section class="posts" style="margin-top: -5rem;">				
 				<article>
 					<header>
 						<a href="ProjectJump.html"><h2>Project Jump</h2></a>
@@ -110,7 +95,6 @@
 						<source src="images/TowerofDaveDemo.mp4" type="video/mp4">
 						The video does not work in this format
 					</video>
-					<p id="demo1" style="transition: max-height 0.2s ease-out; overflow: hidden; max-height: 0;">Click the image to see the description.</p>
 
 					
 					<div style="display: flex; align-items: center;"> <img width=70px; height=70px; src="images/role-icon-1.jpg" alt="Image Description"/>
@@ -127,7 +111,6 @@
 								<h3>2023-Current</h3>
 					</header>
 					<a class="image fit"><img src="images/ThrowProj.png" alt="Image Description"  /></a>
-					<p id="demo3" style="transition: max-height 0.2s ease-out; overflow: hidden; max-height: 0;">Click the image to see the description.</p>
 
 					
 					<div style="display: flex; align-items: center;"> <img width=70px; height=70px; src="images/role-icon-1.jpg" alt="Image Description"/>
@@ -145,7 +128,6 @@
 								<h3>2022</h3>
 					</header>
 					<a class="image fit"><img src="images/DBApp.png" alt="" /></a>
-					<p id="demo2" style="transition: max-height 0.2s ease-out; overflow: hidden; max-height: 0;">Click the image to see the description.</p>
 					</header>
 					<div style="display: flex; align-items: center;"> <img width=70px; height=70px; src="images/role-icon-1.jpg" alt="Image Description"/>
 						<h3 style="padding-left: 20px;">  SQL Queries, UI, Database Design </h5></div>
@@ -165,7 +147,6 @@
 							<source src="images/CapyGameDemo.mp4" type="video/mp4">
 							The video does not work in this format
 						</video>
-						<p id="demo4" style="transition: max-height 0.2s ease-out; overflow: hidden; max-height: 0;">Click the image to see the description.</p>
 	
 						<div style="display: flex; align-items: center;"> <img width=70px; height=70px; src="images/role-icon-1.jpg" alt="Image Description"/>
 							<h3 style="padding-left: 20px;"> Gameplay, Interactions, <br/> Character, World</h5></div>
