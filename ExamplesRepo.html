@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aerospike Graph — Examples Repo (Project)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --bg: #0a0a0f;
+            --accent-cyan: #00f0ff;
+            --accent-pink: #ff00aa;
+            --muted: #bfc7d3;
+        }
+        html,body{height:100%;}
+        body{
+            background: var(--bg);
+            color: #fff;
+            font-family: 'Share Tech Mono', monospace;
+            -webkit-font-smoothing:antialiased;
+            -moz-osx-font-smoothing:grayscale;
+        }
+        a{color:var(--accent-cyan);transition:color .18s}
+        a:hover{color:var(--accent-pink)}
+        .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));}
+        .soft-shadow{box-shadow:0 6px 24px rgba(0,0,0,0.6)}
+        .hl{color:var(--accent-pink)}
+    </style>
+</head>
+<body class="p-6 md:p-12 max-w-4xl mx-auto">
+<a href="index.html" class="inline-block mb-6 text-sm opacity-80 hover:underline">&larr; Back to portfolio</a>
+
+<header class="mb-8">
+    <h1 class="text-4xl md:text-5xl font-bold mb-2 text-[var(--accent-cyan)]">Aerospike Graph — Examples Repo</h1>
+    <p class="text-sm md:text-base text-gray-300">Internship project (May 2025 — December 2025) — tools, scripts and production-ready examples for working with Aerospike Graph Service.</p>
+</header>
+
+<main class="space-y-6">
+
+    <figure class="card rounded-lg overflow-hidden soft-shadow">
+        <img src="images/ExamplesRepo.png" alt="Screenshot: Aerospike Graph examples repo UI" class="w-full h-auto block" />
+        <figcaption class="p-4 text-xs text-gray-400">Screenshot of the repo home page.</figcaption>
+    </figure>
+
+    <section class="card rounded-lg p-6 soft-shadow">
+        <h2 class="text-2xl font-semibold mb-2 text-[var(--accent-pink)]">Overview</h2>
+        <p class="mb-4 text-sm text-gray-200">This repository demonstrates production-ready patterns, reference implementations and utilities built around <strong>Aerospike Graph Service</strong>. It was used for customer proof-of-concepts, internal testing, and reference documentation: everything from dataset generation at scale to secure client-service communication and deployment examples on GCP &amp; AWS.</p>
+
+        <dl class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+            <div>
+                <dt class="text-xs text-gray-400">Role</dt>
+                <dd>Intern — design &amp; implementation of generators, load balancers, deployment examples, and demos.</dd>
+            </div>
+            <div>
+                <dt class="text-xs text-gray-400">Impact</dt>
+                <dd>Enabled terabyte-scale POCs and accelerated performance validation for customers and engineers.</dd>
+            </div>
+        </dl>
+    </section>
+
+    <section class="card rounded-lg p-6 soft-shadow">
+        <h2 class="text-2xl font-semibold mb-3 text-[var(--accent-pink)]">Key Features</h2>
+        <ul class="space-y-4 list-inside text-sm">
+            <li>
+                <strong>Scale-free multi-type graph generator (Python)</strong> — Generates realistic, multi-type graph datasets at high speed (used to produce terabytes of test data). <span class="text-gray-300">Plain English: lets teams create large, representative datasets quickly so they can test performance and correctness without waiting days.</span>
+                <div class="mt-1 text-xs text-gray-400">Technical: multithreaded writer, configurable schemas &amp; property distributions, writes up to ~1M records/sec in benchmarked environments.</div>
+            </li>
+
+            <li>
+                <strong>Thread-safe Gremlin driver load balancers</strong> — Language implementations (Go, JavaScript, Python) that protect backend endpoints from concentrated load.
+                <div class="mt-1 text-xs text-gray-400">Technical: round-robin request distribution, health checks &amp; automatic revival, dynamic endpoint registration for horizontal scalability.</div>
+            </li>
+
+            <li>
+                <strong>Distributed bulk load examples (GCP &amp; AWS)</strong> — Reproducible Apache Spark jobs and deployment recipes demonstrating bulk ingestion to Aerospike Graph at scale.
+                <div class="mt-1 text-xs text-gray-400">Plain English: shows how to run large imports reliably in cloud environments, and how to scale the pipeline for real-world datasets.</div>
+            </li>
+
+            <li>
+                <strong>Transport-level security (TLS) examples</strong> — Step-by-step guides and scripts for generating certificates (OpenSSL), attaching secrets, and configuring secure channels between clients, Graph Service, and Aerospike DB.
+                <div class="mt-1 text-xs text-gray-400">Technical: mutual TLS examples, certificate rotation notes, and secure deployment tips.</div>
+            </li>
+
+            <li>
+                <strong>Full-stack food delivery demo (Streamlit)</strong> — A DoorDash-like demo app showcasing a working API, user flows, and graph visualizations backed by Aerospike Graph.
+                <div class="mt-1 text-xs text-gray-400">Purpose: visual demo for product teams and customers to explore graph features and common query patterns.</div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="card rounded-lg p-6 soft-shadow">
+        <h2 class="text-2xl font-semibold mb-3 text-[var(--accent-pink)]">Tech Stack</h2>
+        <p class="text-sm mb-3">Primary: <span class="hl">Aerospike Graph, Aerospike DB, Python, Go, JavaScript (Node)</span>. Supporting: Apache Spark, GCP, AWS, Streamlit. Front-end &amp; demo shells: Angular, Tailwind CSS, Firebase.</p>
+
+        <div class="flex flex-wrap gap-2 text-xs">
+            <span class="px-2 py-1 rounded bg-white/5">Python</span>
+            <span class="px-2 py-1 rounded bg-white/5">Go</span>
+            <span class="px-2 py-1 rounded bg-white/5">Node.js</span>
+            <span class="px-2 py-1 rounded bg-white/5">Apache Spark</span>
+            <span class="px-2 py-1 rounded bg-white/5">GCP</span>
+            <span class="px-2 py-1 rounded bg-white/5">AWS</span>
+            <span class="px-2 py-1 rounded bg-white/5">Angular</span>
+            <span class="px-2 py-1 rounded bg-white/5">Streamlit</span>
+        </div>
+    </section>
+
+    <section class="card rounded-lg p-6 soft-shadow">
+        <h2 class="text-2xl font-semibold mb-3 text-[var(--accent-pink)]">Results &amp; Notes</h2>
+        <ul class="list-disc list-inside text-sm space-y-2 text-gray-200">
+            <li>Generator benchmarks demonstrated sustained multi-threaded writes at high throughput in controlled tests.</li>
+            <li>Load balancer implementations reduced single-endpoint overloads and improved end-to-end query reliability for stress tests.</li>
+            <li>Cloud bulk-load examples were used as reference for two customer POCs and internal performance runs.</li>
+        </ul>
+    </section>
+
+    <section class="card rounded-lg p-6 soft-shadow flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div>
+            <h3 class="text-lg font-semibold">Live / Repo</h3>
+            <p class="text-sm text-gray-300">Repository &amp; deploy demos are private due to customer data and internal tooling. Happy to provide access or a tailored demo on request.</p>
+        </div>
+
+        <div class="flex gap-3">
+            <!-- Replace href values with actual links when available -->
+            <a href="https://github.com/aerospike/aerospike-graph" target="_blank" rel="noopener noreferrer" class="hover:text-cyberPink transition" aria-label="GitHub Profile">
+                <svg xmlns="http://www.w3.org/2000/svg" class="inline-block h-8 w-8 mr-2 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.263.82-.583 0-.288-.01-1.05-.015-2.06-3.338.725-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.236 1.84 1.236 1.07 1.833 2.807 1.303 3.492.997.108-.775.42-1.303.763-1.603-2.665-.3-5.467-1.33-5.467-5.93 0-1.31.468-2.38 1.236-3.22-.124-.302-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 013.003-.403c1.02.005 2.04.138 3.003.403 2.29-1.552 3.297-1.23 3.297-1.23.655 1.653.243 2.874.12 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.807 5.625-5.48 5.92.43.37.813 1.096.813 2.21 0 1.596-.015 2.88-.015 3.27 0 .32.217.7.825.58C20.565 21.796 24 17.298 24 12c0-6.63-5.373-12-12-12z"/></svg>
+                GitHub
+            </a>
+        </div>
+    </section>
+
+    <footer class="text-xs text-gray-500 text-center mt-6">Made with ❤️ — contact: <a href="mailto:connorhengstler@gmail.com">connorhengstler@gmail.com</a></footer>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Soulsborne — Unreal Engine 3D Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --bg: #0a0a0f;
+            --accent-cyan: #00f0ff;
+            --accent-pink: #ff00aa;
+        }
+        body{
+            background: var(--bg);
+            color: #fff;
+            font-family: 'Share Tech Mono', monospace;
+        }
+        a{color:var(--accent-cyan);transition:color .18s}
+        a:hover{color:var(--accent-pink)}
+        .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));}
+        .soft-shadow{box-shadow:0 6px 24px rgba(0,0,0,0.6)}
+    </style>
+</head>
+<body class="p-6 md:p-12 max-w-4xl mx-auto">
+<a href="index.html" class="inline-block mb-6 text-sm opacity-80 hover:underline">&larr; Back to portfolio</a>
+
+<header class="mb-8">
+    <h1 class="text-4xl md:text-5xl font-bold mb-2 text-[var(--accent-cyan)]">Soulsborne</h1>
+    <p class="text-sm md:text-base text-gray-300">3D Soulslike game built in Unreal Engine — featuring modular gameplay architecture, delegate-based systems, and a combat system powered by Unreal’s Gameplay Ability System (GAS).</p>
+</header>
+
+<main class="space-y-6">
+
+    <figure class="card rounded-lg overflow-hidden soft-shadow">
+        <img src="images/Soulsborne.png" alt="Screenshot from Soulsborne game" class="w-full h-auto block" />
+        <figcaption class="p-4 text-xs text-gray-400">Gameplay screenshot from development build.</figcaption>
+    </figure>
+
+    <section class="card rounded-lg p-6 soft-shadow">
+        <h2 class="text-2xl font-semibold mb-2 text-[var(--accent-pink)]">Overview</h2>
+        <p class="mb-4 text-sm text-gray-200">This Unreal Engine project is a fully playable 3D Soulslike prototype with emphasis on reusable, scalable gameplay systems. Designed as a systems engineering showcase, it uses industry-standard patterns to create maintainable, high-performance code.</p>
+    </section>
+
+    <section class="card rounded-lg p-6 soft-shadow">
+        <h2 class="text-2xl font-semibold mb-3 text-[var(--accent-pink)]">Key Features</h2>
+        <ul class="space-y-4 list-inside text-sm">
+            <li>
+                <strong>Modular Components (Component Design Pattern)</strong> — Core gameplay elements are separated into interchangeable modules, enabling quick iteration and feature expansion without breaking existing systems.
+            </li>
+            <li>
+                <strong>Delegate-Based Notification Systems</strong> — Decouples gameplay systems (UI, AI, combat logic) for cleaner communication, making the codebase easier to scale and maintain.
+            </li>
+            <li>
+                <strong>Gameplay Ability System (GAS) Combat</strong> — Uses Unreal’s GAS to manage abilities, cooldowns, animations, and combat events in a scalable, network-ready way.
+            </li>
+        </ul>
+    </section>
+
+    <section class="card rounded-lg p-6 soft-shadow">
+        <h2 class="text-2xl font-semibold mb-3 text-[var(--accent-pink)]">Tech Stack</h2>
+        <p class="text-sm mb-3">Unreal Engine, C++, Blueprints.</p>
+        <div class="flex flex-wrap gap-2 text-xs">
+            <span class="px-2 py-1 rounded bg-white/5">Unreal Engine</span>
+            <span class="px-2 py-1 rounded bg-white/5">C++</span>
+            <span class="px-2 py-1 rounded bg-white/5">Blueprints</span>
+        </div>
+    </section>
+
+    <section class="card rounded-lg p-6 soft-shadow flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div>
+            <h3 class="text-lg font-semibold">Repository</h3>
+            <p class="text-sm text-gray-300">View the source code and project files on GitHub.</p>
+        </div>
+
+        <div class="flex gap-3">
+            <a href="https://github.com/OblivionBC/Soulsborne target=" rel="noopener noreferrer" class="hover:text-cyberPink transition" aria-label="GitHub Profile">
+                <svg xmlns="http://www.w3.org/2000/svg" class="inline-block h-8 w-8 mr-2 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.263.82-.583 0-.288-.01-1.05-.015-2.06-3.338.725-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.236 1.84 1.236 1.07 1.833 2.807 1.303 3.492.997.108-.775.42-1.303.763-1.603-2.665-.3-5.467-1.33-5.467-5.93 0-1.31.468-2.38 1.236-3.22-.124-.302-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 013.003-.403c1.02.005 2.04.138 3.003.403 2.29-1.552 3.297-1.23 3.297-1.23.655 1.653.243 2.874.12 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.807 5.625-5.48 5.92.43.37.813 1.096.813 2.21 0 1.596-.015 2.88-.015 3.27 0 .32.217.7.825.58C20.565 21.796 24 17.298 24 12c0-6.63-5.373-12-12-12z"/></svg>
+                GitHub
+            </a>        </div>
+    </section>
+
+    <footer class="text-xs text-gray-500 text-center mt-6">Made with ❤️ — contact: <a href="mailto:you@example.com">you@example.com</a></footer>
+</main>
+
+</body>
+</html>
